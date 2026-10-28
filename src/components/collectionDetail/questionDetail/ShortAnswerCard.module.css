@@ -1,0 +1,19 @@
+.shortAnswerCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    padding: var(--padding-card);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.title {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+.description {
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow-x: auto;
+}

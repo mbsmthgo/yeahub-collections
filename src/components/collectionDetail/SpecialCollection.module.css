@@ -1,0 +1,26 @@
+.specialCollection {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    padding: var(--padding-card);
+    box-shadow: var(--shadow-card);
+    gap: var(--gap-card);
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border);
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}

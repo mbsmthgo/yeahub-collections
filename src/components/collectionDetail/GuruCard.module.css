@@ -1,0 +1,27 @@
+.guruCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    padding: var(--padding-card);
+    border: 1px solid var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.guruProfile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.guruSpecialization {
+    color: var(--color-text-secondary);
+    opacity: 70%;
+    margin-top: 5px;
+}
+.guruDescription {
+    line-height: 1.5;
+}
+.guruMedia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

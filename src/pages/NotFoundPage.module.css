@@ -1,0 +1,25 @@
+.notFoundPage {
+    padding: 40px 75px 40px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-card);
+    flex: 1 0 auto;
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1024px) {
+    .notFoundPage {
+        padding: 20px;
+    }
+}
+@media (max-width: 575px) {
+    .notFoundPage {
+        padding: 15px;
+    }
+}

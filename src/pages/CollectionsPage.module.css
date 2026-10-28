@@ -1,0 +1,18 @@
+.main_collections {
+    padding: 40px 75px 40px 75px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: var(--gap-card);
+    flex: 1 0 auto;
+}
+@media (max-width: 1024px) {
+    .main_collections {
+        padding: 20px;
+    }
+}
+@media (max-width: 575px) {
+    .main_collections {
+        padding: 15px;
+    }
+}

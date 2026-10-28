@@ -1,0 +1,53 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.pageList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pageNumber {
+    padding: 8px;
+    border: none;
+    background: var(--color-bg-card);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.pageNumber_active {
+    background: var(--color-primary);
+    color: var(--color-bg-card);
+}
+.pageArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary);
+    padding: 8px;
+    border-radius: 50%;
+    background: var(--color-bg-card);
+    cursor: pointer;
+}
+.pageArrow:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+.pageNumber:disabled {
+    cursor: default;
+}
+@media (max-width: 575px) {
+    .pageArrow {
+        padding: 4px;
+    }
+    .pagination {
+        gap: 8px;
+    }
+    .pageNumber {
+        padding: 6px;
+    }
+}

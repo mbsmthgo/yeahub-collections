@@ -1,0 +1,64 @@
+.collectionItem {
+    width: 100%;
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-item);
+    padding: var(--padding-card);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-card);
+    cursor: pointer;
+}
+.collectionItem_infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-card);
+}
+.badgesGroup {
+    display: flex;
+    gap: var(--gap-card);
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.tagBadge {
+    color: var(--color-success);
+    background-color: var(--color-success-light);
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: var(--radius-badge);
+}
+.collectionItem_title {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.accessBadge {
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+.specializationBadge {
+    color: var(--color-text-tertiary);
+}
+
+@media (max-width: 575px) {
+    .companyImage_container {
+        width: 100%;
+    }
+    .companyImage {
+        width: 100%;
+    }
+    .collectionItem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 15px;
+    }
+    .collectionItem_infoContainer {
+        gap: 15px;
+        min-width: 0;
+        width: 100%;
+    }
+}

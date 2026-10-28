@@ -1,0 +1,55 @@
+.detailAnswerCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    padding: var(--padding-card);
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.description {
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow-x: auto;
+    position: relative;
+    transition: max-height 0.5s ease;
+}
+
+.description_clipped {
+    max-height: 130px;
+    overflow: hidden;
+}
+
+.description_clipped::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    pointer-events: none;
+}
+
+.detailAnswerBtn {
+    border: none;
+    width: 150px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+}
+.detailAnswerBtn img {
+    transition: transform 0.3s ease;
+}

@@ -1,0 +1,42 @@
+.collectionQuestions {
+    width: 100%;
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: var(--padding-card);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-card);
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-border);
+}
+.questionsList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-card);
+}
+.notification {
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-btn);
+    box-shadow: var(--shadow-item);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.notificationText {
+    font-size: 1.2rem;
+}
+.notificationBtn {
+    background: var(--color-bg-card);
+    color: var(--color-primary);
+    padding: var(--padding-badge);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-btn);
+    cursor: pointer;
+}

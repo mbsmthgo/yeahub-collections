@@ -1,0 +1,63 @@
+.collectionBanner {
+    width: 100%;
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-item);
+    padding: var(--padding-card);
+    display: flex;
+    gap: var(--gap-card);
+}
+.companyInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.title {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+.description {
+    font-size: 1rem;
+}
+.imageContainer {
+    width: 100px;
+}
+.companyImage {
+    width: 100%;
+}
+.tagsBtn {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .titleTags_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tagsBtn {
+        cursor: pointer;
+        background: none;
+        border: 1px solid var(--color-border-strong);
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+    }
+    .tagsBtn img {
+        width: 20px;
+    }
+}
+@media (max-width: 575px) {
+    .collectionBanner {
+        flex-direction: column;
+    }
+    .imageContainer {
+        width: 100%;
+    }
+    .companyImage {
+        width: 100%;
+    }
+}
